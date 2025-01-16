@@ -20,6 +20,7 @@
         <module>shardingsphere101</module>
         <module>Algorithm</module>
         <module>middleware-czp</module>
+        <module>middleware-czp/rocketmq</module>
     </modules>
 
     <properties>
