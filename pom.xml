@@ -21,6 +21,7 @@
         <module>Algorithm</module>
         <module>middleware-czp</module>
         <module>middleware-czp/rocketmq</module>
+        <module>czp-tools</module>
     </modules>
 
     <properties>
