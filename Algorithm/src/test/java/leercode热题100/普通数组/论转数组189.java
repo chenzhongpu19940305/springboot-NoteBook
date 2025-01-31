@@ -11,16 +11,10 @@ public class 论转数组189 {
     }
 
     public void rotate(int[] nums, int k) {
-        int[] ss = new int[nums.length + k];
-        for (int i = k; i < nums.length + k; i++) {
-            ss[i] = nums[i - k];
-            if (i >= nums.length) {
-                ss[i - nums.length] = ss[i];
-            }
-        }
-        // 数组复制的正确姿势
-        System.arraycopy(ss, 0, nums, 0, nums.length);
-        // 数组复制的错误姿势
-        //nums = Arrays.copyOf(ss, nums.length);
+       int[] result = new int[nums.length];
+       for(int i=0;i<nums.length;i++){
+           result[(i+k)%nums.length]=nums[i];
+       }
+       System.arraycopy(result,0,nums,0,nums.length);
     }
 }
